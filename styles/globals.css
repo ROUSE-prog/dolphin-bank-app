@@ -1,0 +1,34 @@
+/* styles/globals.css */
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .navbar {
+    background-color: #0070f3;
+    padding: 1rem;
+  }
+  
+  .navbar-brand {
+    color: white;
+    font-size: 1.5rem;
+    text-decoration: none;
+  }
+  
+  .container {
+    padding: 2rem;
+  }
+  
+  .user-info, .bank-account, .transactions {
+    margin-bottom: 2rem;
+  }
+  
+  .transactions ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .transactions li {
+    border-bottom: 1px solid #ddd;
+    padding: 1rem 0;
+  }
+  
