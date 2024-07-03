@@ -1,36 +1,96 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Dolphin Bank 🐬🏦
+
+Dolphin Bank is a modern banking application designed to provide a seamless and secure banking experience. Built using Next.js, React, and TypeScript, Dolphin Bank integrates with Appwrite, Dwolla, and Plaid to offer robust backend services and financial functionalities.
+
+![Dolphin Bank](path/to/your/banner/image.png)
+
+## Features
+
+- **User Authentication**: Secure user authentication using Appwrite.
+- **Bank Account Integration**: Connect multiple bank accounts with Plaid.
+- **Fund Transfers**: Transfer funds between users using Dwolla.
+- **Real-time Transactions**: View real-time transaction data.
+- **Transaction History**: Access detailed transaction history and spending categories.
+- **Secure & Scalable**: Enhanced security with Sentry and scalable architecture.
 
 ## Getting Started
 
-First, run the development server:
+Follow these instructions to set up and run the Dolphin Bank app locally.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### Prerequisites
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Node.js (v14 or higher)
+- npm or yarn
+- Appwrite account
+- Dwolla account
+- Plaid account
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Installation
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/ROUSE-prog/DolphinBank.git
+    cd DolphinBank
+    ```
 
-## Learn More
+2. Install dependencies:
+    ```bash
+    npm install
+    # or
+    yarn install
+    ```
 
-To learn more about Next.js, take a look at the following resources:
+3. Set up environment variables:
+    Create a `.env.local` file in the root directory and add your environment variables:
+    ```env
+    NEXT_PUBLIC_APPWRITE_ENDPOINT=your-appwrite-endpoint
+    NEXT_PUBLIC_APPWRITE_PROJECT=your-appwrite-project-id
+    NEXT_PUBLIC_PLAID_CLIENT_ID=your-plaid-client-id
+    NEXT_PUBLIC_PLAID_SECRET=your-plaid-secret
+    NEXT_PUBLIC_DWOLLA_KEY=your-dwolla-key
+    NEXT_PUBLIC_DWOLLA_SECRET=your-dwolla-secret
+    ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+4. Start the development server:
+    ```bash
+    npm run dev
+    # or
+    yarn dev
+    ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+    Open [http://localhost:3000](http://localhost:3000) in your browser to see the app in action.
 
-## Deploy on Vercel
+### Deployment
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+To deploy the app to a production environment:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+1. Build the app:
+    ```bash
+    npm run build
+    # or
+    yarn build
+    ```
+
+2. Start the production server:
+    ```bash
+    npm start
+    # or
+    yarn start
+    ```
+
+### Folder Structure
+
+```plaintext
+DolphinBank/
+├── public/
+├── src/
+│   ├── components/
+│   ├── pages/
+│   ├── styles/
+│   ├── utils/
+│   └── hooks/
+├── .env.local
+├── .gitignore
+├── next.config.js
+├── package.json
+└── README.md
