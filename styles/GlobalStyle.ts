@@ -10,24 +10,29 @@ const GlobalStyle = createGlobalStyle`
 
   body {
     font-family: 'Roboto', sans-serif;
-    background-color: #f0f2f5;
+    background-image:linear-gradient(to bottom right, rgba(255,255,255,0.2), rgba(255,255,255,0));
     color: #333;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
+    backdrop-filter: blur(10px); 
+    box-shadow: 10px 10px 10px rgba(30,30,30,0.5);
   }
 
   .container {
     display: flex;
     width: 100%;
     max-width: 1200px;
-    margin: 20px;
-    background-color: #fff;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    height: 90vh;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     border-radius: 10px;
     overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.3);
   }
 
   h1, h2, h3 {
@@ -36,7 +41,7 @@ const GlobalStyle = createGlobalStyle`
 
   button {
     cursor: pointer;
-    background-color: #007bff;
+   background-image:linear-gradient(to bottom right, rgba(255,255,255,0.2), rgba(255,255,255,0));
     color: white;
     border: none;
     padding: 10px 20px;

@@ -1,16 +1,12 @@
 // components/MainContent.tsx
-import styled from 'styled-components';
+import React from 'react';
 
-export const MainContent = styled.div`
-  padding: 20px;
-  flex-grow: 1;
-  background-color: #f8f9fa;
+const MainContent: React.FC<{ children: React.ReactNode }> = ({ children }) => {
+  return (
+    <div className="p-5 flex-grow bg-white bg-opacity-20 shadow-md backdrop-blur-lg rounded-lg overflow-hidden">
+      {children}
+    </div>
+  );
+};
 
-  .section {
-    background-color: #ffffff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
-  }
-`;
+export default MainContent;
